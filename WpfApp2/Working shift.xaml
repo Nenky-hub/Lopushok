@@ -1,0 +1,33 @@
+﻿<Page x:Class="WpfApp2.Working_shift"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Working_shift">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="DGWorkingShoft" IsReadOnly="True" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Навзвание" Width="*"  Binding="{Binding Название}"/>
+                <DataGridTextColumn Header="Мастер" Width="*"  Binding="{Binding Мастер_производства.ФИО}"/>
+                <DataGridTextColumn Header="Время начала" Width="*"  Binding="{Binding Время_начало_смены}"/>
+                <DataGridTextColumn Header="Время конца" Width="*"  Binding="{Binding Время_конца_смены}"/>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Редактировать" Name="ButtonEdit" Click="ButtonEdit_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Сотрудники" FontFamily="Gabriola" FontSize="25" x:Name="BtnStaff" Click="BtnSataff_Click"  Grid.Row="1" Grid.Column="1"/>
+    </Grid>
+</Page>

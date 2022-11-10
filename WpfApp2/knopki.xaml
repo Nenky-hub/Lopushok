@@ -1,0 +1,28 @@
+﻿<Page x:Class="WpfApp2.knopki"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="knopki">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Материалы" FontFamily="Gabriola" FontSize="25" Name="BtnMat" Click="BtnMat_Click" ></Button>
+        <Button Content="Продукция" FontFamily="Gabriola" FontSize="25" x:Name="BtnProd" Click="BtnProd_Click" Grid.Column="1"/>
+       
+        <Button Content="Сотрудники" FontFamily="Gabriola" FontSize="25" x:Name="BtnStaff" Click="BtnSataff_Click"  Grid.Row="1" Grid.Column="1"/>
+        <Button Content="Смены" FontFamily="Gabriola" FontSize="25" x:Name="BtnSmens" Click="BtnSmens_Click" Grid.Row="2"/>
+        <Button Content="Список заказанных материалов" FontFamily="Gabriola" FontSize="25" x:Name="BtnPayMatView" Click="BtnPayMatView_Click"  Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="295"/>
+    </Grid>
+</Page>

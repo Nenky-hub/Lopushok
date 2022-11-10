@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Лопушок" Height="450" Width="800" Icon="/Лопушок.ico">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Background="#CEFFF9" >
+            <Image HorizontalAlignment="Left" Height="41"  VerticalAlignment="Center" Width="100" Margin="10 0 0 0" Source="/Resources/Лопушок.png"/>
+            <Label Content="Лопушок" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Button HorizontalAlignment="Right" Content="Назад" Name="BtnBack" Click="BtnBck_Click" Margin="5,0,20,0" ></Button>
+        </Grid>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" ContentRendered="MainFrame_CR" Margin="0,41,0,0" Grid.RowSpan="2"/>
+    </Grid>
+</Window>

@@ -1,0 +1,29 @@
+﻿<Page x:Class="WpfApp2.Autorization"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Autorization">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="184*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Авторизация" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="1" Margin="0,0,0,50" Width="240" Click="Button_Click" Grid.Column="1" Height="30"/>
+        <TextBox x:Name="Password_Box" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" Grid.Row="1" FontSize="22" Margin="10,154,0,0" Grid.Column="1" Height="30"/>
+        <TextBox x:Name="Username_Box" HorizontalAlignment="Center" TextWrapping="Wrap" Width="240" Grid.Row="1" VerticalAlignment="Top" FontSize="22" Margin="10,88,0,0" Grid.Column="1" Height="30"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,48,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Grid.Row="1" FontFamily="Gabriola" FontSize="22" Grid.Column="1" Height="37" Width="43"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,123,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Grid.Row="1" FontFamily="Gabriola" FontSize="24" Grid.Column="1" Height="41" Width="56"/>
+        <TextBlock TextWrapping="Wrap" Text="Авторизация" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.569" FontFamily="Gabriola" FontSize="36" Grid.Column="1" HorizontalAlignment="Left" Margin="49,0,0,0" Height="61" Width="161"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="33fb1ad0f80c4f5c98cbdc27aa513b82" Name="Diagram1">
+        <EntityTypeShape EntityType="lapushokModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="lapushokModel.Users" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="lapushokModel.Заказ_материалов" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="lapushokModel.Мастер_производства" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="lapushokModel.Материалы" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="lapushokModel.Продукция" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="lapushokModel.Смены" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="lapushokModel.Сотрудники" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="lapushokModel.FK_Заказ_материалов_Материалы" ManuallyRouted="false" />
+        <AssociationConnector Association="lapushokModel.FK_Заказ_материалов_Продукция" ManuallyRouted="false" />
+        <AssociationConnector Association="lapushokModel.FK_Смены_Мастер_производства" ManuallyRouted="false" />
+        <AssociationConnector Association="lapushokModel.FK_Сотрудники_Смены" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
